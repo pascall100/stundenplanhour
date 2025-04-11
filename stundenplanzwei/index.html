@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schulhof-Programmierung.de - Stundenplan </title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h4>Stundenplan – Schulhof-Programmierung.de</h4>
+
+  <div class="fach-liste">
+    <div class="fach" draggable="true">Mathe</div>
+    <div class="fach" draggable="true">Deutsch</div>
+    <div class="fach" draggable="true">Englisch</div>
+    <div class="fach" draggable="true">Physik</div>
+    <div class="fach" draggable="true">Bio</div>
+    <div class="fach" draggable="true">Sport</div>
+    <div class="fach" draggable="true">BWL</div>
+    <div class="fach" draggable="true">Geschichte</div>
+    <div class="fach" draggable="true">Juhu, frei</div>
+   
+  </div>
+
+  <div class="buttons">
+    <button onclick="clearPlan()">löschen</button>
+    <button onclick="window.print()">drucken</button>
+  </div>
+
+  <table id="stundenplan">
+    <thead>
+      <tr>
+        <th>Uhrzeit</th>
+        <th>Montag</th>
+        <th>Dienstag</th>
+        <th>Mittwoch</th>
+        <th>Donnerstag</th>
+        <th>Freitag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>08:30–09:30</td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td></tr>
+      <tr><td>09:00–10:00</td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td></tr>
+      <tr><td>10:15–11:15</td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td></tr>
+      <tr><td>11:30–12:30</td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td></tr>
+      <tr><td>12:45–13:45</td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td></tr>
+      <tr><td>14:00–15:00</td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td></tr>
+      <tr><td>15:15–16:15</td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td></tr>
+      <tr><td>16:30–17:30</td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td></tr>
+      <tr><td>17:45–18:45</td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td><td class="dropzone"></td></tr>
+    </tbody>
+  </table>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+
